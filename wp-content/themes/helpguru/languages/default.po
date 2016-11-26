@@ -2182,7 +2182,7 @@ msgid " Articles"
 msgstr ""
 
 #: ../taxonomy-ht_kb_category.php:178 ../taxonomy-ht_kb_tag.php:116
-msgid "Nothing in this category."
+msgid "Aguarde! Estamos trabalhando nos artigos para esta seção."
 msgstr ""
 
 #: ../taxonomy-topic-tag-edit.php:26 ../taxonomy-topic-tag.php:26

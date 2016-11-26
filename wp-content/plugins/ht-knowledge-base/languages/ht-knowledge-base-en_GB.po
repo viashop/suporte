@@ -1263,7 +1263,7 @@ msgid " Articles"
 msgstr ""
 
 #: ../templates/ht-knowledge-base-category-template.php:93
-msgid "Nothing in this category."
+msgid "Aguarde! Estamos trabalhando nos artigos para esta seção."
 msgstr ""
 
 #: ../templates/ht-knowledge-base-search-template.php:17

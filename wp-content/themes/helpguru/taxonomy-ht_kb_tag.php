@@ -5,7 +5,7 @@
 <?php get_template_part( 'page-header', 'kb' ); ?>
 
 <!-- #primary -->
-<div id="primary" class="<?php echo get_theme_mod( 'ht_kb_sidebar', 'sidebar-right' ); ?> clearfix"> 
+<div id="primary" class="<?php echo get_theme_mod( 'ht_kb_sidebar', 'sidebar-right' ); ?> clearfix">
 <div class="ht-container">
 
 <!-- #content -->
@@ -18,15 +18,15 @@
 $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); ?>
 
   	<?php
-	
+
 	if( function_exists('get_ht_kb_term_meta') ){
 		$term_meta = get_ht_kb_term_meta($term);
 	} else {
 		$term_meta = $term;
 	}
-	
+
   	$category_thumb_att_id = 0;
-	$category_color = '#222'; 
+	$category_color = '#222';
 
 	if(is_array($term_meta)&&array_key_exists('meta_image', $term_meta)&&!empty($term_meta['meta_image']))
 		$category_thumb_att_id = $term_meta['meta_image'];
@@ -55,11 +55,11 @@ $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' 
 	<!--.ht-kb-category-title-wrappe-->
 	<div class="ht-kb-category-title-wrapper <?php echo $ht_kb_category_class; ?> clearfix">
 
-	<?php 
-	
+	<?php
+
 	if( !empty( $category_thumb_att_id ) && $category_thumb_att_id!=0 ){
 		$category_thumb_obj = wp_get_attachment_image_src( $category_thumb_att_id, 'ht-kb-thumb');
-		
+
 		$category_thumb_src = $category_thumb_obj[0];
 		echo '<img src="' . $category_thumb_src . '" class="ht-kb-category-thumb" />';
 	} ?>
@@ -82,13 +82,13 @@ $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' 
                 'child_of'      => 	$term->term_id,
                 'hide_empty'    =>  0,
                 'pad_counts'   	=>	true
-			); 
+			);
 		$sub_categories = get_terms('ht_kb_category', $args);
 		$sub_categories = wp_list_filter($sub_categories,array('parent'=>$term->term_id));
 		if ( $sub_categories ): ?>
 		<div class="ht-kb-sub-cats">
 		<?php foreach ($sub_categories as $sub_category) { ?>
-			
+
 			<h2 class="ht-kb-sub-cat-title">
 				<a href="<?php echo esc_attr(get_term_link($sub_category, 'ht_kb_category')); ?>" title="<?php printf( __( '%s', 'ht-theme' ), $sub_category->name ); ?>"><?php echo $sub_category->name; ?></a>
 				<span class="ht-kb-category-count"><?php echo $sub_category->count ?> <?php _e(' Articles', 'ht-theme'); ?></span>
@@ -112,15 +112,15 @@ $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' 
 			</h3>
 			<?php ht_kb_entry_meta_display(); ?>
 		</article>
-    
+
     <?php endwhile; ?>
 
     <?php ht_pagination(); ?>
-    
+
     <?php else : ?>
 
-    <h2><?php _e('Nothing in this category.', 'ht-theme'); ?></h2>
-    
+    <h2><?php _e('Aguarde! Estamos trabalhando nos artigos para esta seção.', 'ht-theme'); ?></h2>
+
 <?php endif; ?>
 
 </div>

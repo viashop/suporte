@@ -187,7 +187,7 @@ $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' 
     
     <?php else : ?>
 
-    <h2><?php _e('Nothing in this category.', 'ht-theme'); ?></h2>
+    <h2><?php _e('Aguarde! Estamos trabalhando nos artigos para esta seção.', 'ht-theme'); ?></h2>
     
 <?php endif; ?>
 
