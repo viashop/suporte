@@ -1,0 +1,104 @@
+/**
+* @file _search-results.scss
+*/
+
+#jquery-live-search {
+	background: #fff;
+	padding: 5px 10px;
+	max-height: 400px;
+	overflow: auto;
+	position: absolute;
+	z-index: 99;
+	border: 1px solid #e6e6e6;
+	border-width: 0 1px 1px 1px;
+	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* KB Search Results */
+#ht-kb-search-result {
+	list-style: none;
+	margin: 0;
+	padding: 5px 0 0;
+	li {
+		padding: 0 0 0 30px;
+		margin: 0 0 15px;
+		position: relative;
+		&.ht-kb a:before,
+		&.ht-kb-category a:before,
+		&.ht-kb-tag a:before,
+		&.ht-kb-usefulness a:before {
+			font-family: $ico-font;
+			color: $ico-color;
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+		}
+		&.ht-kb a:before {
+			content: "\f0f6";
+		}
+		&.ht-kb-category a:before {
+			content: "\f07b";
+		}
+		&.ht-kb-tag a:before {
+			content: "\f02b";
+		}
+		&.ht-kb-usefulness.ht-kb-helpful-article a:before {
+			content: "\f164";
+		}
+		&.ht-kb-usefulness.ht-kb-unhelpful-article a:before {
+			content: "\f165";
+		}
+		a {
+			display: block;
+			color:inherit;
+			text-decoration: none;
+		}
+		.ht-kb-search-result-title,
+		.ht-kb-search-result-excerpt {
+			display: block;
+		}
+		.ht-kb-search-result-title {
+			font-weight: bold;
+			margin: 0 0 10px;
+		}
+		.ht-kb-search-result-excerpt {
+			p {
+				font-size: 90%;
+				line-height: 1.4em;
+			}
+		}
+		.ht-kb-search-result-meta {
+			position: absolute;
+			top: 0;
+			right: 0;
+			.ht-kb-view-count,
+			.ht-kb-comments-count,
+			.ht-kb-usefulness {
+				display: inline-block;
+				font-size: 70%;
+				margin: 0 0 0 5px;
+			}
+			.ht-kb-view-count:before,
+			.ht-kb-comments-count:before,
+			.ht-kb-usefulness:before {
+				font-family: $ico-font;
+				margin: 0 5px 0 0;
+			}
+			.ht-kb-view-count:before {
+				content: $ico-view;
+			}
+			.ht-kb-comments-count:before {
+				content: $ico-comment;
+			}
+			.ht-kb-usefulness.ht-kb-helpful-article:before {
+				content: "\f164";
+			}
+			.ht-kb-usefulness.ht-kb-unhelpful-article:before {
+				content: "\f165";
+			}
+		}
+	}
+}

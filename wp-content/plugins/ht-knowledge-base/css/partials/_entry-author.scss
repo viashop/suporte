@@ -1,0 +1,26 @@
+/**
+* @file _entry-author.scss
+*/
+
+#entry-author {
+	padding: 30px 0 0;
+	.gravatar {
+		float: left;
+		margin: 0 35px 0 0;
+	}
+	.entry-author-name {
+		margin: 15px 0 15px;
+		display: inline-block;
+	}
+	.ht-kb-most-helpful-user {
+		font-size: 80%;
+		color: #999;
+		line-height: 1;
+		margin: 0 0 0 10px;
+		font-style: italic;
+		font-weight: normal;
+	}
+	.entry-author-desc {
+		margin: 0 0 0 105px;
+	}
+}

@@ -1,0 +1,39 @@
+/**
+* @file _search-box.scss
+*/
+/* Search Box */
+#ht-kb-search {
+  margin: 0 0 40px; }
+  #ht-kb-search #searchform {
+    width: 100%;
+    overflow: hidden;
+    position: relative; }
+  #ht-kb-search #s {
+    width: 100%;
+    float: left;
+    padding: 18px; }
+    @media screen and (min-width: 400px) {
+      #ht-kb-search #s {
+        width: 72%; } }
+    @media screen and (min-width: 580px) {
+      #ht-kb-search #s {
+        width: 79%; } }
+  #ht-kb-search #searchsubmit {
+    float: left;
+    margin: 0 0 0 2%;
+    padding: 18px;
+    white-space: nowrap;
+    line-height: 1em;
+    border: 1px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 26%;
+    display: none; }
+    @media screen and (min-width: 400px) {
+      #ht-kb-search #searchsubmit {
+        display: block; } }
+    @media screen and (min-width: 580px) {
+      #ht-kb-search #searchsubmit {
+        width: 19%; } }
