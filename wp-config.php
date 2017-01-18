@@ -1,5 +1,5 @@
 <?php
-/** 
+/**
  * As configurações básicas do WordPress.
  *
  * Esse arquivo contém as seguintes configurações: configurações de MySQL, Prefixo de Tabelas,
@@ -16,7 +16,7 @@
 
 // ** Configurações do MySQL - Você pode pegar essas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'vialojac_suporte');
+define('DB_NAME', 'vialoja_support');
 
 /** Usuário do banco de dados MySQL */
 //define('DB_USER', 'suporte');
@@ -30,7 +30,7 @@ define('DB_PASSWORD', '123456');
 define('DB_HOST', 'localhost');
 
 /** Conjunto de caracteres do banco de dados a ser usado na criação das tabelas. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** O tipo de collate do banco de dados. Não altere isso se tiver dúvidas. */
 define('DB_COLLATE', '');
@@ -87,6 +87,6 @@ define('WP_DEBUG', false);
 /** Caminho absoluto para o diretório WordPress. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
-	
+
 /** Configura as variáveis do WordPress e arquivos inclusos. */
 require_once(ABSPATH . 'wp-settings.php');

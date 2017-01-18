@@ -103,11 +103,11 @@ if ( $ht_hpf_count == 1) {
 
 	<?php if (!class_exists( 'bbPress_Desativado' )): ?>
 	<div class="ht-grid-col <?php echo $ht_hpf_col; ?>">
-	<a href="http://forum.vialoja.com.br/">
+	<a href="http://comunidade.vialoja.com.br/">
 		<div class="hf-block hf-forum-block">
-		<i class="fa fa-comment-o"></i>
-		<h4><?php _e( 'ViaLoja Fóruns', 'ht-theme' ); ?></h4>
-		<h5>Comunidade de Ajuda!</h5>
+		<i class="fa fa-comments-o"></i>
+		<h4><?php _e( 'Comunidade Vialoja', 'ht-theme' ); ?></h4>
+		<h5>A comunidade Vialoja é um espaço de discussão gratuito e ela é aberta a todos os lojistas!</h5>
 		<?php
 		/**
 		* <h5><?php echo $ht_count_bbp_topics; ?> <?php _e( 'Topics', 'ht-theme' ); ?>  /  <?php echo $ht_count_bbp_reply; ?> <?php _e( 'Posts', 'ht-theme' ); ?></h5>
